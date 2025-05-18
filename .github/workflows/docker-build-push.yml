@@ -43,7 +43,10 @@ jobs:
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       run: |
-        mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -f inventory-service/pom.xml -Dsonar.projectKey=Chathuni1012_CTSE-Assignment-01
+        mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
+          -Dsonar.projectKey=Chathuni1012_CTSE-Assignment-01 \
+          -Dsonar.organization=chathuni1012 \
+          -Dsonar.host.url=https://sonarcloud.io
   
   
   build-and-push:
