@@ -3,7 +3,7 @@ name: Integrated CI/CD Pipeline
 on:
   push:
     branches:
-      - product-service # Only trigger on product-service branch test
+      - product-service # Only trigger on product-service branch test 1
     paths:
       - '**'
       - '.github/workflows/productservice-app-AutoDeployTrigger-cc51c54f-22b1-4f6f-a31e-116509b9783b.yml'
